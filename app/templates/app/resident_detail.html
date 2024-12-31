@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="resident">
+        <h2><a href="">{{resident.name}}</a></h2>
+        <p>{{resident.user}}</p>
+        <p>{{resident.full_name}}</p>
+        <p>{{resident.username}}</p>
+        <p>{{resident.address}}</p>
+        <p>{{resident.contact_number}}</p>
+        <p>{{resident.email }}</p>
+        <p>{{resident.created_at}}</p>
+        <p>{{resident.status}}</p>
+       
+          
+
+
+
+       </div>
+       <a href="{% url 'resident_update' resident.pk %}">+ Edit resident</a>
+        <a href="{% url 'resident_delete' resident.pk %}">- Delete resident</a>     
+
+{% endblock content %}

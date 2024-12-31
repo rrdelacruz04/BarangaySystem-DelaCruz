@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<a href="{% url 'resident_create' %}">+ New Resident</a>
+
+<div class="nav right">
+</div>
+
+    {% for resident in resident %}
+       <div class="resident r">
+           <h2><a href="{% url 'resident_detail' resident.pk %}">{{resident.user}}</a></h2>
+           <a>{{resident.resident_detail}}</a>
+
+       </div>
+    {% endfor %}
+{% endblock content %}

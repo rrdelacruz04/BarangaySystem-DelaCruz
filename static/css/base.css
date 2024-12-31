@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1.edit-resident {
+    color: #4CAF50;
+}
+
+h1.new-resident {
+    color: #4CAF50;
+}
+
+h1.delete-resident {
+    color: #D32F2F;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form input[type="Submit"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"].update,
+form input[type="Submit"].update {
+    background-color: #4CAF50;
+    color: white;
+}
+
+form input[type="submit"].delete,
+form input[type="Submit"].delete {
+    background-color: #D32F2F;
+    color: white;
+}
+
+form input[type="submit"]:hover,
+form input[type="Submit"]:hover {
+    transform: scale(1.02);
+}
+
+form input[type="submit"].update:hover,
+form input[type="Submit"].update:hover {
+    background-color: #388E3C;
+}
+
+form input[type="submit"].delete:hover,
+form input[type="Submit"].delete:hover {
+    background-color: #B71C1C;
+}
+
+form input[name="csrfmiddlewaretoken"] {
+    display: none;
+}
+
+.resident {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resident h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.resident p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+a[href*="resident_update"],
+a[href*="resident_delete"] {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a[href*="resident_update"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+a[href*="resident_update"]:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+a[href*="resident_delete"] {
+    background-color: #D32F2F;
+    color: white;
+}
+
+a[href*="resident_delete"]:hover {
+    background-color: #B71C1C;
+    transform: scale(1.05);
+}
